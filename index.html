@@ -6,7 +6,7 @@
 </head>
 <body>
     
-    <button type="button" onclick="post()">POST</button>
+    <button type="button" onclick="post()">INSERT</button>
     <button type="button" onclick="query()">QUERY</button>
 
     <textarea name="text" id="sqlQuery" cols="30" rows="10"></textarea>
@@ -21,7 +21,7 @@
 
     <script>
         const xhttp = new XMLHttpRequest()
-        let endPointRoot = 'https://comp4537-lab5-h2bh.onrender.com/'
+        let endPointRoot = 'https://sqldb-lab5.onrender.com'
         async function post() {
             xhttp.open("POST", endPointRoot + "lab5/insert", true)
             xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8")
